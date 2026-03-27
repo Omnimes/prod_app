@@ -1,0 +1,1 @@
+import{_ as n,c as s,o as t,d as o}from"./index-CTci3H8r.js";const r={},c={class:"card flex align-items-center justify-content-center"};function i(a,e){return t(),s("div",c,[...e[0]||(e[0]=[o("i",{class:"pi pi-spin pi-spinner",style:{"font-size":"2rem"}},null,-1)])])}const l=n(r,[["render",i]]);export{l as C};
