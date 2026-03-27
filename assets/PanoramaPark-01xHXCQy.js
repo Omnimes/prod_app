@@ -1,1 +1,0 @@
-import{c as t,o,f as n,d as e,a5 as l}from"./index-CTci3H8r.js";const m={__name:"PanoramaPark",setup(s){return(r,a)=>(o(),t("div",null,[n(l,{title:r.$t("titlePanoramaPark")},null,8,["title"]),a[0]||(a[0]=e("div",{class:"card"},[e("p",null,"Panorama parku maszynowego - w trakcie migracji")],-1))]))}};export{m as default};
