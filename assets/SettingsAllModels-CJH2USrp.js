@@ -1,1 +1,0 @@
-import{_ as t,d as o,o as l,e as s}from"./index-Cj1J_opj.js";const n={},a={class:"card"};function c(r,e){return l(),o("div",a,[...e[0]||(e[0]=[s("h1",null,"Settings All Models",-1),s("p",null,"Ustawienia wszystkich modeli - w trakcie migracji",-1)])])}const d=t(n,[["render",c]]);export{d as default};
