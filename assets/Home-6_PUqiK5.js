@@ -1,1 +1,0 @@
-import{_ as o,e as t,o as s,f as n}from"./index-7AtUdTTF.js";const a={},r={class:"card"};function c(l,e){return s(),t("div",r,[...e[0]||(e[0]=[n("h1",null,"Strona Główna",-1),n("p",null,"Witaj w OmniMES",-1)])])}const d=o(a,[["render",c]]);export{d as default};
