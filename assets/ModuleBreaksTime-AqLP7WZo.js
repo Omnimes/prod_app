@@ -1,0 +1,1 @@
+import{e as r,o as l,h as o,f as a,ci as s}from"./index-hTzD5nWZ.js";const n={__name:"ModuleBreaksTime",setup(i){return(t,e)=>(l(),r("div",null,[o(s,{title:t.$t("titleModuleBreaksTime")},null,8,["title"]),e[0]||(e[0]=a("div",{class:"card"},[a("p",null,"Moduł przerw i czasu pracy - w trakcie migracji")],-1))]))}};export{n as default};

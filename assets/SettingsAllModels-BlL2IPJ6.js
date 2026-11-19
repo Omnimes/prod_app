@@ -1,0 +1,1 @@
+import{_ as t,e as o,o as l,f as s}from"./index-hTzD5nWZ.js";const n={},a={class:"card"};function c(r,e){return l(),o("div",a,[...e[0]||(e[0]=[s("h1",null,"Settings All Models",-1),s("p",null,"Ustawienia wszystkich modeli - w trakcie migracji",-1)])])}const d=t(n,[["render",c]]);export{d as default};
