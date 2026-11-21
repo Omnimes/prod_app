@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; font-src data:; media-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; frame-src 'none'; object-src 'none'"><style>html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:transparent}iframe{display:block;width:100%;height:100%;border:0}</style></head><body><script>(function () {
+  'use strict';
+  var PREFIX = "ui/notifications/sandbox-";
+  var app = null, received = false, loads = 0;
+  function isSandbox(data) {
+    return !!data && typeof data === 'object' && typeof data.method === 'string' && data.method.indexOf(PREFIX) === 0;
+  }
+  function toHost(data) { window.parent.postMessage(data, '*'); }
+  function create(html) {
+    app = document.createElement('iframe');
+    app.setAttribute('sandbox', "allow-scripts allow-forms");
+    app.setAttribute('referrerpolicy', 'no-referrer');
+    app.addEventListener('load', function () {
+      loads += 1;
+      if (loads < 2) return;
+      toHost({ jsonrpc: '2.0', method: PREFIX + 'navigation', params: {} });
+      if (app) { app.remove(); app = null; }
+    });
+    app.srcdoc = html;
+    document.body.appendChild(app);
+  }
+  window.addEventListener('message', function (event) {
+    var data = event.data;
+    if (event.source === window.parent) {
+      if (isSandbox(data)) {
+        if (data.method === PREFIX + 'resource-ready' && !received) {
+          received = true;
+          create(String((data.params && data.params.html) || ''));
+        }
+        return;
+      }
+      if (app && app.contentWindow) app.contentWindow.postMessage(data, '*');
+      return;
+    }
+    if (app && event.source === app.contentWindow && !isSandbox(data)) toHost(data);
+  });
+  toHost({ jsonrpc: '2.0', method: PREFIX + 'proxy-ready', params: {} });
+})();</script></body></html>

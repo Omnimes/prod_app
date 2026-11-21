@@ -1,0 +1,1 @@
+import{_ as t,o,g as l,h as s}from"./index-CnLA_YPI.js";const n={},a={class:"card"};function c(r,e){return o(),l("div",a,[...e[0]||(e[0]=[s("h1",null,"Settings All Models",-1),s("p",null,"Ustawienia wszystkich modeli - w trakcie migracji",-1)])])}const d=t(n,[["render",c]]);export{d as default};
