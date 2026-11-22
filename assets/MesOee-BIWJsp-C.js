@@ -1,1 +1,0 @@
-import{be as t,X as o,o as a,g as r}from"./index-CnLA_YPI.js";const p={__name:"MesOee",setup(s){const e=t();return o(()=>{e.replace({path:"/analysis-worktime",query:{tab:"oee"}})}),(n,c)=>(a(),r("div"))}};export{p as default};

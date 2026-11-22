@@ -1,0 +1,1 @@
+import{a1 as t,bh as o,Y as s,o as p,g as a}from"./index-B7tjstCf.js";const _={__name:"MesReports",setup(u){const e=t(),r=o();return s(()=>{e.query.tab==="subscriptions"?r.replace({path:"/reportPeriodConfig"}):r.replace({path:"/reports-add",query:{group:"production",...e.query.type?{type:e.query.type}:{}}})}),(c,n)=>(p(),a("div"))}};export{_ as default};

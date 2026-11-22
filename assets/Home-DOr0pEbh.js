@@ -1,1 +1,0 @@
-import{_ as o,o as t,g as s,h as n}from"./index-CnLA_YPI.js";const a={},r={class:"card"};function c(l,e){return t(),s("div",r,[...e[0]||(e[0]=[n("h1",null,"Strona Główna",-1),n("p",null,"Witaj w OmniMES",-1)])])}const d=o(a,[["render",c]]);export{d as default};

@@ -1,1 +1,0 @@
-import{a0 as t,be as o,X as s,o as p,g as a}from"./index-CnLA_YPI.js";const _={__name:"MesReports",setup(u){const e=t(),r=o();return s(()=>{e.query.tab==="subscriptions"?r.replace({path:"/reportPeriodConfig"}):r.replace({path:"/reports-add",query:{group:"production",...e.query.type?{type:e.query.type}:{}}})}),(c,n)=>(p(),a("div"))}};export{_ as default};

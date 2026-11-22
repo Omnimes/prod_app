@@ -1,1 +1,0 @@
-import{o as r,g as l,i as s,ds as o,h as a}from"./index-CnLA_YPI.js";const c={__name:"ModuleBreaksTime",setup(i){return(t,e)=>(r(),l("div",null,[s(o,{title:t.$t("titleModuleBreaksTime")},null,8,["title"]),e[0]||(e[0]=a("div",{class:"card"},[a("p",null,"Moduł przerw i czasu pracy - w trakcie migracji")],-1))]))}};export{c as default};

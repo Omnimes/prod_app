@@ -1,0 +1,1 @@
+function i(t){if(t==null||t==="")return null;const n=t instanceof Date?t:new Date(t);if(Number.isNaN(n.getTime()))return null;const e=r=>String(r).padStart(2,"0");return`${n.getFullYear()}-${e(n.getMonth()+1)}-${e(n.getDate())}`}export{i as l};
