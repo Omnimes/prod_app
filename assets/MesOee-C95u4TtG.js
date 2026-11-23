@@ -1,1 +1,0 @@
-import{bi as t,Y as o,o as a,g as r}from"./index-CH6BXAas.js";const p={__name:"MesOee",setup(s){const e=t();return o(()=>{e.replace({path:"/analysis-worktime",query:{tab:"oee"}})}),(n,c)=>(a(),r("div"))}};export{p as default};
