@@ -1,0 +1,1 @@
+import{ac as t,bf as o,o as s,g as p,h as a}from"./index-BRULrt-s.js";const _={__name:"MesReports",setup(u){const e=t(),r=o();return s(()=>{e.query.tab==="subscriptions"?r.replace({path:"/reportPeriodConfig"}):r.replace({path:"/reports-add",query:{group:"production",...e.query.type?{type:e.query.type}:{}}})}),(c,n)=>(p(),a("div"))}};export{_ as default};
