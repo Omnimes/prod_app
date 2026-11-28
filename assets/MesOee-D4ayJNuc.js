@@ -1,0 +1,1 @@
+import{bf as t,o,g as a,h as r}from"./index-Ffgscti6.js";const p={__name:"MesOee",setup(s){const e=t();return o(()=>{e.replace({path:"/analysis-worktime",query:{tab:"oee"}})}),(n,c)=>(a(),r("div"))}};export{p as default};
